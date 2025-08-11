@@ -9,10 +9,10 @@
 <body style="background-color: #000;">
     <a-scene>
         <a-assets>
-            <a-asset-item id="chair-01" src="chair-01.glb"></a-asset-item>
+            <a-asset-item id="chair" src="https://code-abdulrehman.github.io/lecture-3dmodel/chair-01.glb"></a-asset-item>
         </a-assets>
+        <a-entity gltf-model="#chair" position="0 1 -2"></a-entity>
 
-        <a-entity gltf-model="#chair-01" position="0 2 -2" scale="1 1 1"></a-entity>
         <a-text value="Hello World" position="0 2 -3" color="white" scale="2 2 2"></a-text>
         <a-sky color="teal"></a-sky>
     </a-scene>
