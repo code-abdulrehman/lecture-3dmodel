@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-Frame Test</title>
+    <script src="https://unpkg.com/aframe@1.7.0/dist/aframe.min.js"></script>
+</head>
+<body style="background-color: #000;">
+    <a-scene>
+        <a-assets>
+            <a-asset-item id="chair-01" src="./chair-01.gltf"></a-asset-item>
+        </a-assets>
+
+        <a-entity gltf-model="#chair-01" position="0 0 -3" scale="1 1 1"></a-entity>
+
+        <a-light type="ambient" color="#fff" intensity="1"></a-light>
+        <a-light type="directional" color="#fff" intensity="0.8" position="2 4 3"></a-light>
+
+        <a-entity camera look-controls position="0 1.6 3"></a-entity>
+        <a-sky color="teal"></a-sky>
+    </a-scene>
+</body>
+</html>
